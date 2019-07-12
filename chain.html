@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+
+<script>
+      $(document).ready(function(){
+        $("#animat").click(function(){
+          $(".para").css("background","blue").slideUp(5000).slideDown(5000)
+        });
+      });
+</script>
+<button id="stop">Stop Animation</button>
+<button id="animat">Click Here</button>
+  <div class="para" style="height:500px;background:green;weight:300px;">
+    <div class="inside" style="position: absolute;height:50px;background:red;weight:50px;border-radius:50%;">
+      City University
+    </div>
+  </div>
+</body>
+</html>

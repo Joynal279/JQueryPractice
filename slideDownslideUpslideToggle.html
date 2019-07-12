@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="js/jquery.js"></script>
+</head>
+<body>
+  <script>
+
+    $(document).ready(function(){
+      $("#slidedown").click(function(){
+        $(".para").slideDown("slow");
+      });
+
+      $("#slideup").click(function(){
+        $(".para").slideUp("slow");
+      });
+
+      $("#slidetoggle").click(function(){
+        $(".para").slideToggle(3000);
+      });
+    });
+  </script>
+
+
+  <button id="slidedown">SlideDown</button>
+  <button id="slideup">SlideUp</button>
+  <button id="slidetoggle">Slide Toggle</button>
+      <div class="para" style="display:none">
+        <h3>Wonderfully the picture</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ea aliquam possimus aut repellendus quisquam corrupti magni quis temporibus ipsam dolorem quo cumque eveniet, doloremque qui sapiente dolores natus voluptate? Autem quos ad culpa consequatur rerum, molestiae deserunt fugiat earum quibusdam, necessitatibus nam aut ut, quo harum dolorum, nulla. Quas.</p>
+      </div>
+</body>
+</html>

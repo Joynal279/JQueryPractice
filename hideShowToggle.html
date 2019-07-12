@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="js/jquery.js"></script>
+</head>
+<body>
+
+  <script>
+      $(document).ready(function(){
+          $("#hide").click(function(){
+            $(".para").hide();
+          });
+
+          $("#show").click(function(){
+            $(".para").show();
+          });
+          $("#toggle").click(function(){
+            $("h3").toggle();
+          });
+      });
+  </script>
+      <button id="show">Show</button>
+      <button id="hide">Hide</button>
+      <button id="toggle">Toggle</button>
+    <div class="para">
+      <h3>Lorem ipsum dolor sit amet.lorem10 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo nulla repudiandae dolor quidem rerum inventore animi sit voluptatem soluta suscipit, saepe in sequi beatae dicta eveniet, amet veniam facere accusantium?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus maxime id esse commodi alias, voluptas excepturi repudiandae facere dolorum accusantium provident minima, vel cumque maiores adipisci. Saepe, consequuntur, veritatis! Quisquam vitae id inventore eligendi eaque, facilis! Rerum molestias, exercitationem, excepturi doloribus praesentium vero cumque sed quasi voluptas deleniti consequatur vitae provident fuga illum nisi voluptatem, eaque explicabo! Similique, dignissimos minima culpa, cupiditate illo molestiae, ab dolore, laborum eos iste architecto eligendi. A nemo consectetur obcaecati modi debitis perspiciatis laborum placeat consequatur ut soluta porro in fugiat iure esse vel commodi deleniti voluptatum nulla, tenetur sapiente amet laudantium! Unde, esse, aliquid!</p>
+    </div>
+</body>
+</html>
